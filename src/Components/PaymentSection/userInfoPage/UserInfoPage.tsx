@@ -33,8 +33,8 @@ const validate = (values: UserData) => {
 
     if (!values.phone) {
         errors.phone = 'Required';
-    } else if (values.phone.length > 10 || values.phone.length < 10) {
-        errors.phone = 'Must be 10 characters';
+    } else if (values.phone.length > 12 || values.phone.length < 10) {
+        errors.phone = 'Must be between 10 and 12 characters';
     }
 
     if (!values.address) {
