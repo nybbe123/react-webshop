@@ -54,7 +54,7 @@ const ProductDetailedPage = (props: Props) => {
                     </button> */}
                     {/* <FilterComponent /> */}
                     <Select
-                        value={sizeOptions.find(obj => obj.value === size)}
+                        // value={sizeOptions.find(obj => obj.value === size)}
                         options={sizeOptions}
                         className={classes['mb-3']}
                         placeholder='Size'

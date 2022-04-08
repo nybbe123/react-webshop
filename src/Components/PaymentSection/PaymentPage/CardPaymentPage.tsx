@@ -75,7 +75,7 @@ const CardPaymentPage = (props: Props) => {
         <Fragment>
             <CheckoutHeader />
             <div className={classes['checkout-header']}>
-                <ArrowBackIcon className={classes['arrow-back-icon-btn']} onClick={() => navigate(-1)}/>
+                <ArrowBackIcon className={classes['arrow-back-icon-btn']} onClick={() => navigate(-1)} />
                 <img src={progressbar3} alt="" />
             </div>
             <form id="usrForm" className={classes['card-payment-form']} onSubmit={formik.handleSubmit} autoComplete="on">
@@ -85,9 +85,9 @@ const CardPaymentPage = (props: Props) => {
                 <div className={classes['input-container']}>
                     <label htmlFor="cc-number">Card number</label>
                     <TextField
+                        required
                         id="cardNumber"
                         name="cardNumber"
-                        type="tel"
                         autoComplete="cc-number"
                         placeholder='**** **** **** ****'
                         onChange={formik.handleChange}
@@ -104,10 +104,10 @@ const CardPaymentPage = (props: Props) => {
                     <div className={classes['expiration-input-container']}>
                         <label htmlFor="cc-exp">Expiration date</label>
                         <TextField
+                            required
                             id="expirationDate"
                             name="expirationDate"
                             autoComplete="cc-exp"
-                            type="tel"
                             placeholder='01/21'
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
@@ -118,9 +118,9 @@ const CardPaymentPage = (props: Props) => {
                     <div className={classes['secure-input-container']}>
                         <label htmlFor="secureCode">Secure code</label>
                         <TextField
+                            required
                             id="secureCode"
                             name="secureCode"
-                            type="secureCode"
                             placeholder='***'
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}

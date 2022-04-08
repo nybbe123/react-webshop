@@ -2,7 +2,7 @@
 
 .product-header-container {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     margin: 2rem auto 0 auto;
     max-width: 1260px;
@@ -24,12 +24,14 @@
     position: relative;
     cursor: pointer;
 }
+
 .container-header {
     display: flex;
     justify-content: center;
     align-items: center;
     min-width: 6rem;
 }
+
 .filter-choices {
     position: absolute;
     top: 2.5rem;
@@ -37,9 +39,11 @@
     z-index: 1111;
     display: none;
 }
+
 .filter-choices.active {
     display: block;
 }
+
 .sort-choices {
     position: absolute;
     top: 2.5rem;
@@ -47,9 +51,11 @@
     z-index: 1111;
     display: none;
 }
+
 .sort-choices.active {
     display: block;
 }
+
 .sort-container {
     display: flex;
     align-items: center;
@@ -59,6 +65,7 @@
     position: relative;
     cursor: pointer;
 }
+
 .sort-container span {
     font-size: 1.2rem;
     font-weight: 600;

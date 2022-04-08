@@ -19,7 +19,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   position: relative;
   margin-left: 5rem;
@@ -35,8 +35,8 @@
 
 .aside-text {
   display: flex;
-  align-items: start;
-  justify-content: start;
+  align-items: flex-start;
+  justify-content: flex-start;
   font-size: 1.5rem;
   font-weight: 500;
   padding: 8px 0px 8px 16px;
@@ -53,7 +53,7 @@
 .cName {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .cName h2 {
